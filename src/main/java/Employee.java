@@ -2,6 +2,8 @@ public class Employee {
     private String employeeId;
     private String name;
     private String department;
+    private double punchIn;
+    private double punchOut;
 
     public String getEmployeeId() {
         return employeeId;
@@ -47,13 +49,20 @@ public class Employee {
     private int hoursWorked;
 
     public double getTotalPay(){
-        double totalPay = hoursWorked * payRate;
-        return totalPay;
+        return hoursWorked * payRate;
     }
     public void getRegularHours(){
 
     }
     public void getOvertimeHours(){
+
+    }
+
+    public void punchIn(double time){
+
+    }
+
+    public void punchOut(double time){
 
     }
 }
